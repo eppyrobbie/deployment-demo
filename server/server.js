@@ -5,7 +5,7 @@ require('dotenv').config()
 
 const app = express()
 
-app.use(express.json)
+app.use(express.json())
 app.use(cors())
 
 const {home} = require("./controllers/pageCtrl")
